@@ -1,0 +1,12 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="18. HateaosForwardTest" type="JUnit" factoryName="JUnit" folderName="1. Spring REST">
+    <module name="spring-rest-hateaos" />
+    <option name="PACKAGE_NAME" value="com.luxoft.springadvanced.springhateaos" />
+    <option name="MAIN_CLASS_NAME" value="com.luxoft.springadvanced.springhateaos.HateaosForwardTest" />
+    <option name="METHOD_NAME" value="" />
+    <option name="TEST_OBJECT" value="class" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

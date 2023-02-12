@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="2. SpringDataRestApplication" type="Application" factoryName="Application" folderName="1. Spring REST">
+    <option name="MAIN_CLASS_NAME" value="com.luxoft.springadvanced.springdatarest.SpringDataRestApplication" />
+    <module name="spring-data-rest" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

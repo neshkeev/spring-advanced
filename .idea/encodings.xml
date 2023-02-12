@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/spring-object-mapping/mapstruct-mapping-loop/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-object-mapping/spring-bean-validation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-object-mapping/spring-data-rest-projections/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-object-mapping/spring-jackson-demo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-object-mapping/spring-mapstruct/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-object-mapping/spring-serde/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-object-mapping/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-object-mapping/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-rest/spring-data-rest/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-rest/spring-data-rest/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-rest/spring-observability/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-rest/spring-observability/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-rest/spring-rest-events/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-rest/spring-rest-events/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-rest/spring-rest-hateaos/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-rest/spring-rest-hateos/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-rest/spring-rest-hateos/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-rest/spring-webclient/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-rest/spring-webclient/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-rest/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-rest/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

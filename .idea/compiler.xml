@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-rest-events" />
+        <module name="spring-serde" />
+        <module name="spring-rest-hateos" />
+        <module name="spring-bean-validation" />
+        <module name="spring-data-rest" />
+        <module name="spring-data-rest-projections" />
+        <module name="spring-webclient" />
+        <module name="spring-observability" />
+        <module name="spring-rest-hateaos" />
+        <module name="spring-jackson-demo" />
+      </profile>
+      <profile name="Annotation profile for spring-advanced" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.5.3.Final/mapstruct-processor-1.5.3.Final.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.5.3.Final/mapstruct-1.5.3.Final.jar" />
+        </processorPath>
+        <module name="spring-mapstruct" />
+        <module name="mapstruct-mapping-loop" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spring-projections" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="mapstruct-mapping-loop" options="-parameters" />
+      <module name="spring-bean-validation" options="-parameters" />
+      <module name="spring-data-rest" options="-parameters" />
+      <module name="spring-data-rest-projections" options="-parameters" />
+      <module name="spring-jackson-demo" options="-parameters" />
+      <module name="spring-mapstruct" options="-parameters" />
+      <module name="spring-observability" options="-parameters" />
+      <module name="spring-rest-events" options="-parameters" />
+      <module name="spring-rest-hateaos" options="-parameters" />
+      <module name="spring-rest-hateos" options="-parameters" />
+      <module name="spring-serde" options="-parameters" />
+      <module name="spring-webclient" options="-parameters" />
+    </option>
+  </component>
+</project>
