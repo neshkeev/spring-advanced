@@ -22,6 +22,10 @@
     <file url="file://$PROJECT_DIR$/spring-rest/spring-webclient/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-rest/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-rest/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-transactions/spring-transactions-dao/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-transactions/spring-transactons-dao/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-transactions/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-transactions/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>

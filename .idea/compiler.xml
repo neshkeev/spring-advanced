@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-rest-events" />
         <module name="spring-serde" />
+        <module name="spring-transactions-dao" />
         <module name="spring-rest-hateos" />
         <module name="spring-bean-validation" />
         <module name="spring-data-rest" />
@@ -29,9 +30,6 @@
         <module name="mapstruct-mapping-loop" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="spring-projections" target="17" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -46,6 +44,8 @@
       <module name="spring-rest-hateaos" options="-parameters" />
       <module name="spring-rest-hateos" options="-parameters" />
       <module name="spring-serde" options="-parameters" />
+      <module name="spring-transactions-dao" options="-parameters" />
+      <module name="spring-transactons-dao" options="-parameters" />
       <module name="spring-webclient" options="-parameters" />
     </option>
   </component>
