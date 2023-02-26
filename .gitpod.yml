@@ -1,0 +1,18 @@
+image: gitpod/workspace-java-17
+
+vscode:
+  extensions:
+    # Docker Containers
+    - ms-azuretools.vscode-docker
+    # Spring Boot
+    - Pivotal.vscode-boot-dev-pack
+    - pivotal.vscode-spring-boot
+    # Java
+    - vscjava.vscode-java-pack
+    - redhat.java
+    - vscjava.vscode-java-debug
+    - vscjava.vscode-java-dependency
+    - vscjava.vscode-java-test
+    - vscjava.vscode-maven
+    - vscjava.vscode-spring-boot-dashboard
+    - vscjava.vscode-spring-initializr
