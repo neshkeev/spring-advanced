@@ -1,0 +1,12 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="10. InvalidPersonIdTest" type="JUnit" factoryName="JUnit" folderName="2. Object Mapping">
+    <module name="spring-bean-validation" />
+    <option name="PACKAGE_NAME" value="com.luxoft.springadvanced.beanvalidation" />
+    <option name="MAIN_CLASS_NAME" value="com.luxoft.springadvanced.beanvalidation.InvalidPersonIdTest" />
+    <option name="METHOD_NAME" value="" />
+    <option name="TEST_OBJECT" value="class" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

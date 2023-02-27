@@ -1,0 +1,12 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="6. PersonDTOControllerTest" type="JUnit" factoryName="JUnit" folderName="2. Object Mapping">
+    <module name="mapstruct-mapping-loop" />
+    <option name="PACKAGE_NAME" value="com.luxoft.springadvanced.mapstruct.loop" />
+    <option name="MAIN_CLASS_NAME" value="com.luxoft.springadvanced.mapstruct.loop.PersonDTOControllerTest" />
+    <option name="METHOD_NAME" value="" />
+    <option name="TEST_OBJECT" value="class" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

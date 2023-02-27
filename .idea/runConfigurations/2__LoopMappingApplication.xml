@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="2. LoopMappingApplication" type="Application" factoryName="Application" folderName="2. Object Mapping">
+    <option name="MAIN_CLASS_NAME" value="com.luxoft.springadvanced.mapstruct.loop.LoopMappingApplication" />
+    <module name="mapstruct-mapping-loop" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

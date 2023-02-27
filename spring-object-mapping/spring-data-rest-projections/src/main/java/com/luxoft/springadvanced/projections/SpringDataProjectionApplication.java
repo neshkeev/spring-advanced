@@ -5,15 +5,15 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Application {
+public class SpringDataProjectionApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        SpringApplication.run(SpringDataProjectionApplication.class, args);
     }
 
     private final CustomerRepository customers;
 
-    public Application(CustomerRepository customers) {
+    public SpringDataProjectionApplication(CustomerRepository customers) {
         this.customers = customers;
     }
 

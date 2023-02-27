@@ -8,14 +8,14 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Application {
+public class LoopMappingApplication {
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        SpringApplication.run(LoopMappingApplication.class, args);
     }
 
     private final PersonRepository personRepository;
 
-    public Application(PersonRepository personRepository) {
+    public LoopMappingApplication(PersonRepository personRepository) {
         this.personRepository = personRepository;
     }
 
