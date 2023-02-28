@@ -15,10 +15,16 @@ import java.util.List;
 public interface EmployeeMapper {
     Logger LOG = LoggerFactory.getLogger(EmployeeMapper.class);
 
-    @Mappings({ @Mapping(target = "empId", source = "entity.id"), @Mapping(target = "empName", source = "entity.name"), @Mapping(target = "dept", source = "entity.department")})
+    @Mappings({
+            @Mapping(target = "empId", source = "entity.id"),
+            @Mapping(target = "empName", source = "entity.name"),
+            @Mapping(target = "dept", source = "entity.department")})
     EmployeeDTO employeeToEmployeeDTO(Employee entity);
 
-    @Mappings({ @Mapping(target = "id", source = "dto.empId"), @Mapping(target = "name", source = "dto.empName"), @Mapping(target = "department", source = "dto.dept")})
+    @Mappings({
+            @Mapping(target = "id", source = "dto.empId"),
+            @Mapping(target = "name", source = "dto.empName"),
+            @Mapping(target = "department", source = "dto.dept")})
     Employee employeeDTOtoEmployee(EmployeeDTO dto);
 
     DepartmentDTO divisionToDepartmentDTO(Department entity);
@@ -30,7 +36,7 @@ public interface EmployeeMapper {
     List<EmployeeDTO> convertEmployeeListToEmployeeDTOList(List<Employee> list);
 
     @BeforeMapping
-    default void postMapping(Employee emp, @MappingTarget EmployeeDTO employeeDTO) {
+    default void preMapping(Employee emp, @MappingTarget EmployeeDTO employeeDTO) {
         LOG.info("Before Mapping Employee to EmployeeDTO");
     }
 
