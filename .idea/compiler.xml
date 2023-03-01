@@ -14,6 +14,7 @@
         <module name="spring-data-rest" />
         <module name="spring-data-rest-projections" />
         <module name="spring-webclient" />
+        <module name="spring-distributed-transactions" />
         <module name="spring-observability" />
         <module name="spring-rest-hateaos" />
         <module name="spring-jackson-demo" />
@@ -37,6 +38,7 @@
       <module name="spring-bean-validation" options="-parameters" />
       <module name="spring-data-rest" options="-parameters" />
       <module name="spring-data-rest-projections" options="-parameters" />
+      <module name="spring-distributed-transactions" options="-parameters" />
       <module name="spring-jackson-demo" options="-parameters" />
       <module name="spring-mapstruct" options="-parameters" />
       <module name="spring-observability" options="-parameters" />

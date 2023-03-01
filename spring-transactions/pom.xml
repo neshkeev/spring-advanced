@@ -22,5 +22,6 @@
 
     <modules>
         <module>spring-transactions-dao</module>
+        <module>spring-distributed-transactions</module>
     </modules>
 </project>
