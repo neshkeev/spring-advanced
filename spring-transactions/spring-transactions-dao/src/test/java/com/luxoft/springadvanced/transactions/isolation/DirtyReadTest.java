@@ -2,7 +2,6 @@ package com.luxoft.springadvanced.transactions.isolation;
 
 import com.luxoft.springadvanced.transactions.dao.BookRepository;
 import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -50,7 +49,6 @@ public class DirtyReadTest {
         action(0, 0);
     }
 
-    @Disabled
     @Test
     @Sql("classpath:clean-schema.sql")
     @Transactional(isolation = Isolation.READ_UNCOMMITTED)

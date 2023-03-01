@@ -23,7 +23,8 @@ public class ManualTransactionService {
             final var book = new Book("Alice in Wonderland", null);
             bookRepository.save(book);
 			transactionManager.commit(status);
-		} catch (RuntimeException e) {
+		}
+        catch (RuntimeException e) {
 			transactionManager.rollback(status);
 		}
     }
@@ -34,7 +35,8 @@ public class ManualTransactionService {
             final var book = throwOnBook();
             bookRepository.save(book);
             transactionManager.commit(status);
-        } catch (RuntimeException e) {
+        }
+        catch (RuntimeException e) {
             transactionManager.rollback(status);
         }
     }

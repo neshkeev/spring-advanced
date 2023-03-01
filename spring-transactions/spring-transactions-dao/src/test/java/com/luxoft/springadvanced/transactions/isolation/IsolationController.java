@@ -25,7 +25,6 @@ public class IsolationController {
 
     @Transactional(propagation = Propagation.REQUIRES_NEW)
     public void createFirstBook() {
-//        bookRepository.deleteAll();
         final var book = bookRepository.findById(0)
                 .orElse(new Book("Alice in Wonderland", null));
         book.setTitle("Alice in Wonderland");
@@ -38,12 +37,9 @@ public class IsolationController {
     public void updateFirst(CountDownLatch wait, CountDownLatch notify) throws InterruptedException {
         wait.await();
         try {
-            bookRepository.findAll().forEach(System.out::println);
-            System.out.println(bookRepository.count());
             final var entity = bookRepository.findById(0).orElseThrow();
             entity.setTitle(UUID.randomUUID().toString());
-            bookRepository.save(entity);
-            em.flush();
+            bookRepository.saveAndFlush(entity);
         }
         finally {
             notify.countDown();
@@ -56,7 +52,7 @@ public class IsolationController {
         wait.await();
         try {
             final var entity = new Book(UUID.randomUUID().toString(), null);
-            bookRepository.save(entity);
+            bookRepository.saveAndFlush(entity);
         }
         finally {
             notify.countDown();
@@ -90,7 +86,7 @@ public class IsolationController {
 
         first.setTitle(newTitle);
         try {
-            bookRepository.save(first);
+            bookRepository.saveAndFlush(first);
         }
         finally {
             signal.countDown();
@@ -112,13 +108,12 @@ public class IsolationController {
         slot.await();
 
         first.setTitle(newTitle);
-        bookRepository.save(first);
+        bookRepository.saveAndFlush(first);
     }
 
     @Transactional(propagation = Propagation.REQUIRES_NEW, isolation = Isolation.READ_COMMITTED)
     public void getFirst() {
         final var book = bookRepository.findById(0).orElseThrow();
         em.refresh(book);
-//        return book;
     }
 }
