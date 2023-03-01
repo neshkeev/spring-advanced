@@ -32,6 +32,7 @@
     <writeAnnotations>
       <writeAnnotation name="org.springframework.beans.factory.annotation.Autowired" />
       <writeAnnotation name="org.springframework.boot.test.web.server.LocalServerPort" />
+      <writeAnnotation name="jakarta.persistence.PersistenceContext" />
     </writeAnnotations>
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />

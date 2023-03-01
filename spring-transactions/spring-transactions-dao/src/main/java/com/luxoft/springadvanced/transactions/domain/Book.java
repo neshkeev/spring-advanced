@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 
 import java.time.LocalDate;
 
+@SuppressWarnings("unused")
 @Entity
 public class Book {
 
@@ -15,16 +16,9 @@ public class Book {
 	@Column(name = "DATE_RELEASE")
 	private java.time.LocalDate dateRelease;
 	private String publisher;
-	@Version
 	private int version;
 
 	public Book() {
-	}
-
-	public Book(int id, String title, LocalDate dateRelease) {
-		this.id = id;
-		this.title = title;
-		this.dateRelease = dateRelease;
 	}
 
 	public Book(String title, LocalDate dateRelease) {
@@ -35,9 +29,11 @@ public class Book {
 	@Override
 	public String toString() {
 		return "Book{" +
-				"title='" + title + '\'' +
+				"id=" + id +
+				", title='" + title + '\'' +
 				", dateRelease=" + dateRelease +
 				", publisher='" + publisher + '\'' +
+				", version=" + version +
 				'}';
 	}
 
