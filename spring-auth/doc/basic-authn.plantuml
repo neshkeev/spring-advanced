@@ -1,0 +1,14 @@
+@startuml
+participant "Client" as client
+participant "Server" as server
+
+client -> server: GET /orders
+client <- server: 403 Unauthorized
+client -> server: GET /orders\nAuthentication: Basic base64(username:password)
+client <- server: 200 OK\n{...}
+client -> server: GET /cart
+client <- server: 403 Unauthorized
+client -> server: GET /cart\nAuthentication: Basic base64(username:password)
+client <- server: 200 OK\n{...}
+
+@enduml

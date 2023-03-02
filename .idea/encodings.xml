@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/spring-auth/spring-auth-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-auth/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-auth/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-object-mapping/mapstruct-mapping-loop/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-object-mapping/spring-bean-validation/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-object-mapping/spring-data-rest-projections/src/main/java" charset="UTF-8" />

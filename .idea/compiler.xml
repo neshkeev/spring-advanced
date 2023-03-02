@@ -6,18 +6,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-rest-events" />
-        <module name="spring-serde" />
         <module name="spring-transactions-dao" />
         <module name="spring-rest-hateos" />
         <module name="spring-bean-validation" />
         <module name="spring-data-rest" />
         <module name="spring-data-rest-projections" />
-        <module name="spring-webclient" />
-        <module name="spring-distributed-transactions" />
         <module name="spring-observability" />
         <module name="spring-rest-hateaos" />
         <module name="spring-jackson-demo" />
+        <module name="spring-rest-events" />
+        <module name="spring-serde" />
+        <module name="spring-auth-service" />
+        <module name="spring-webclient" />
+        <module name="spring-distributed-transactions" />
       </profile>
       <profile name="Annotation profile for spring-advanced" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -35,6 +36,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="mapstruct-mapping-loop" options="-parameters" />
+      <module name="spring-auth-service" options="-parameters" />
       <module name="spring-bean-validation" options="-parameters" />
       <module name="spring-data-rest" options="-parameters" />
       <module name="spring-data-rest-projections" options="-parameters" />

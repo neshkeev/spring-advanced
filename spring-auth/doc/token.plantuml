@@ -1,0 +1,17 @@
+@startuml
+participant "Client" as client
+participant "Удостоверяющий сервер" as auth
+participant "Server" as server
+
+client -> server: GET /orders
+client <- server: 403 Unauthorized
+client -> auth: /token
+client <- auth: Форма входа
+client -> auth: POST\nlogin + password
+auth -> auth: создать сессию
+client <- auth: 200 OK\n{access_token, refresh_token}
+client -> server: GET /orders\nAuthentication: Bearer access_token
+server -> auth: POST /introspect\naccess_token
+server <- auth: 200 OK
+client <- server: 200 OK\n{...}
+@enduml

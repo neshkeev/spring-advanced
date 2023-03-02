@@ -1,0 +1,13 @@
+@startuml
+participant "Client" as client
+participant "Server" as server
+
+client -> server: GET /orders
+client <- server: 403 Unauthorized
+client -> server: GET /login
+client <- server: 200 OK\nlogin.html
+client -> server: POST /login\nlogin=user&password=pwd
+client <- server: 200 OK\nJSESSIONID=<JSESSIONID COOKIE>
+client -> server: GET /orders\nCookie: JSESSIONID=<JSESSIONID COOKIE>
+client <- server: 200 OK\n{...}
+@enduml
