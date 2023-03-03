@@ -1,0 +1,54 @@
+GET http://localhost:8080/
+
+###
+
+GET http://localhost:8080/hello
+
+###
+
+POST http://localhost:8080/persons
+Content-Type: application/json
+
+{"name":"Vasya", "surname":"Poupkin"}
+
+###
+
+POST http://localhost:8080/persons
+Content-Type: application/json
+
+{"name":"Sasha", "surname":"Poushkine"}
+###
+
+POST http://localhost:8080/persons
+Content-Type: application/json
+
+{"name":"Misha", "surname":"Lermontov"}
+
+###
+
+POST http://localhost:8080/persons
+Content-Type: application/json
+
+{"name":"Joseph", "surname":"Brodsky"}
+
+###
+
+GET http://localhost:8080/persons/all
+
+###
+
+GET http://localhost:8080/persons
+
+###
+
+GET http://localhost:8080/persons/names?count=10
+
+###
+
+GET http://localhost:8080/persons/
+
+###
+
+GET http://localhost:8080/persons/stream
+
+

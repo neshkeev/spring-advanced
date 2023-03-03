@@ -27,6 +27,7 @@
         <module>spring-object-mapping</module>
         <module>spring-transactions</module>
         <module>spring-auth</module>
+        <module>spring-reactive</module>
     </modules>
 
 </project>

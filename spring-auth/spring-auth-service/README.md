@@ -3,11 +3,18 @@
 ## Tests
 
 The `com.luxoft.springadvanced.auth.serviceaccounts.ServiceAccountTest` test relies on the fact that there is keycloak
-up and running on the computer. In order to run keycloak in docker, please execute the command:
+up and running on the computer. In order to run keycloak in docker, please execute the following commands:
 
+1. Start keycloak in docker
 ```bash
 docker run -p 18080:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin quay.io/keycloak/keycloak:21.0.1 start-dev
 ```
+2. Open [http://localhost:8080/](http://localhost:8080/)
+3. Enter credentials: `admin/admin`
+4. Create a new realm: `myrealm`
+5. Create a new confidential client: `client`
+6. Replace the `-DclientSecret`'s value with the credentials of the `client` client in the `ServiceAccountTest` Run Configuration: `-DclientSecret="XXXYYYZZZ"`
+7. Run the `ServiceAccountTest` Run Configuration
 
 ## Oauth 2.0. Authorization Code Flow
 

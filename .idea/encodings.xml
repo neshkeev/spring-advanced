@@ -12,6 +12,10 @@
     <file url="file://$PROJECT_DIR$/spring-object-mapping/spring-serde/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-object-mapping/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-object-mapping/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-reactive/spring-reactor-demo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-reactive/spring-webflux-demo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-reactive/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-reactive/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-rest/spring-data-rest/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-rest/spring-data-rest/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-rest/spring-observability/src/main/java" charset="UTF-8" />

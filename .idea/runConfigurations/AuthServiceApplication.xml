@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="AuthServiceApplication" type="Application" factoryName="Application" folderName="4. Auth" nameIsGenerated="true">
+    <option name="MAIN_CLASS_NAME" value="com.luxoft.springadvanced.auth.AuthServiceApplication" />
+    <module name="spring-auth-service" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

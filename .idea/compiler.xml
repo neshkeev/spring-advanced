@@ -11,6 +11,7 @@
         <module name="spring-bean-validation" />
         <module name="spring-data-rest" />
         <module name="spring-data-rest-projections" />
+        <module name="spring-webflux-demo" />
         <module name="spring-observability" />
         <module name="spring-rest-hateaos" />
         <module name="spring-jackson-demo" />
@@ -19,6 +20,7 @@
         <module name="spring-auth-service" />
         <module name="spring-webclient" />
         <module name="spring-distributed-transactions" />
+        <module name="spring-reactor-demo" />
       </profile>
       <profile name="Annotation profile for spring-advanced" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -44,6 +46,7 @@
       <module name="spring-jackson-demo" options="-parameters" />
       <module name="spring-mapstruct" options="-parameters" />
       <module name="spring-observability" options="-parameters" />
+      <module name="spring-reactor-demo" options="-parameters" />
       <module name="spring-rest-events" options="-parameters" />
       <module name="spring-rest-hateaos" options="-parameters" />
       <module name="spring-rest-hateos" options="-parameters" />
@@ -51,6 +54,7 @@
       <module name="spring-transactions-dao" options="-parameters" />
       <module name="spring-transactons-dao" options="-parameters" />
       <module name="spring-webclient" options="-parameters" />
+      <module name="spring-webflux-demo" options="-parameters" />
     </option>
   </component>
 </project>
