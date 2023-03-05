@@ -21,6 +21,7 @@ public class WSClient {
                         .map(WebSocketMessage::getPayloadAsText)
                         .map(el -> el+"!")
                         .map(session::textMessage)
+                        .doOnNext(System.out::println)
                         .map(Mono::just)
                         .flatMap(session::send)
                         )

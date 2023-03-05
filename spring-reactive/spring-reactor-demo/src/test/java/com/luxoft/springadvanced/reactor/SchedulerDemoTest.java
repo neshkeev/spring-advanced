@@ -18,7 +18,7 @@ public class SchedulerDemoTest {
     }
 
     @Test
-    public void test() throws InterruptedException {
+    public void test() {
         var parallel = Schedulers.newParallel("parallel");
         final var flux = Flux.range(1, 2)
                 .doOnNext(ignore -> System.out.println(Thread.currentThread().getName()))

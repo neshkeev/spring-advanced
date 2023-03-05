@@ -18,7 +18,7 @@ import java.util.Map;
 @Configuration
 public class WSPersonConfiguration {
     private final PersonRepository personRepository;
-    ObjectMapper converter = new ObjectMapper();
+    private static final ObjectMapper converter = new ObjectMapper();
 
     @Autowired
     public WSPersonConfiguration(PersonRepository personRepository) {

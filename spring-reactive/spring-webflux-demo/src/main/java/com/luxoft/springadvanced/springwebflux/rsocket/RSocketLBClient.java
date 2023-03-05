@@ -36,14 +36,15 @@ public class RSocketLBClient {
                 .doOnSubscribe(s -> System.out.println("RSocket connection established on port " + port))
                 .block();
 
+        @SuppressWarnings("deprecation")
         List<RSocketSupplier> socketSuppliers = Flux.just(17000, 7001)
             .map(port -> new RSocketSupplier(
                 ()->Mono.just(getConnector.apply(port))))
             .collectList().block();
 
         assert socketSuppliers != null;
-        LoadBalancedRSocketMono balancer =
-                LoadBalancedRSocketMono
+        @SuppressWarnings("deprecation")
+        LoadBalancedRSocketMono balancer = LoadBalancedRSocketMono
                     .create(Flux.just(socketSuppliers));
 
         AtomicInteger id = new AtomicInteger(1);

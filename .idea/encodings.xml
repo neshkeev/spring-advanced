@@ -29,6 +29,13 @@
     <file url="file://$PROJECT_DIR$/spring-rest/spring-webclient/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-rest/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-rest/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-testing/spring-testing-annotations/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-testing/spring-testing-mockito/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-testing/spring-testing-mvc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-testing/spring-testing-testcontainers/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-testing/spring-testing-webflux/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-testing/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-testing/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-transactions/spring-distributed-transactions/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-transactions/spring-transactions-dao/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-transactions/spring-transactons-dao/src/main/java" charset="UTF-8" />

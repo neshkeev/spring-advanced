@@ -10,14 +10,18 @@
         <module name="spring-rest-hateos" />
         <module name="spring-bean-validation" />
         <module name="spring-data-rest" />
+        <module name="spring-testing-mockito" />
         <module name="spring-data-rest-projections" />
         <module name="spring-webflux-demo" />
+        <module name="spring-testing-mvc" />
         <module name="spring-observability" />
         <module name="spring-rest-hateaos" />
         <module name="spring-jackson-demo" />
         <module name="spring-rest-events" />
+        <module name="spring-testing-webflux" />
         <module name="spring-serde" />
         <module name="spring-auth-service" />
+        <module name="spring-testing-annotations" />
         <module name="spring-webclient" />
         <module name="spring-distributed-transactions" />
         <module name="spring-reactor-demo" />
@@ -34,6 +38,9 @@
         <module name="mapstruct-mapping-loop" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spring-testing-testcontainers" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -51,6 +58,11 @@
       <module name="spring-rest-hateaos" options="-parameters" />
       <module name="spring-rest-hateos" options="-parameters" />
       <module name="spring-serde" options="-parameters" />
+      <module name="spring-testing-annotations" options="-parameters" />
+      <module name="spring-testing-mockito" options="-parameters" />
+      <module name="spring-testing-mvc" options="-parameters" />
+      <module name="spring-testing-testcontainers" options="-parameters" />
+      <module name="spring-testing-webflux" options="-parameters" />
       <module name="spring-transactions-dao" options="-parameters" />
       <module name="spring-transactons-dao" options="-parameters" />
       <module name="spring-webclient" options="-parameters" />

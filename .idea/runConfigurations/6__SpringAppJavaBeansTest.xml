@@ -1,0 +1,12 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="6. SpringAppJavaBeansTest" type="JUnit" factoryName="JUnit" folderName="6. Testing">
+    <module name="spring-testing-annotations" />
+    <option name="PACKAGE_NAME" value="com.luxoft.springadvanced.springtesting.annotations.context" />
+    <option name="MAIN_CLASS_NAME" value="com.luxoft.springadvanced.springtesting.annotations.context.SpringAppJavaBeansTest" />
+    <option name="METHOD_NAME" value="" />
+    <option name="TEST_OBJECT" value="class" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

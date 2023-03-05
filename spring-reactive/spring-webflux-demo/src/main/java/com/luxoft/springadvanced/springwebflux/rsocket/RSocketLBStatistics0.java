@@ -20,7 +20,6 @@ import java.time.Duration;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.Function;
 
-import static io.rsocket.client.LoadBalancedRSocketMono.create;
 
 public class RSocketLBStatistics0 {
     public static final String MIME_ROUTER = "message/x.rsocket.composite-metadata.v0";
@@ -41,7 +40,8 @@ public class RSocketLBStatistics0 {
                 .doOnSubscribe(s -> System.out.println("RSocket connection established on port " + port))
             );
 
-        LoadBalancedRSocketMono balancer = create(
+        @SuppressWarnings("deprecation")
+        LoadBalancedRSocketMono balancer = LoadBalancedRSocketMono.create(
             Flux.just(17000, 7001)
             .map(port -> new RSocketSupplier(() -> getConnector.apply(port)))
             .collectList()

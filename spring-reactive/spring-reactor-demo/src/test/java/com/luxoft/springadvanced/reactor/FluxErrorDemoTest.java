@@ -22,7 +22,8 @@ public class FluxErrorDemoTest {
             do {
                 if (amount > 6) {
                     sink.error(new RuntimeException("oops! amount is " + amount));
-                } else {
+                }
+                else {
                     sink.next(amount);
                 }
                 amount = new Random().nextInt(10);

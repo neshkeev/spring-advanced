@@ -7,7 +7,6 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 import java.net.URI;
-import java.nio.ByteBuffer;
 import java.time.Duration;
 
 /**
@@ -33,8 +32,8 @@ public class WSClientPerson {
                 Mono<Void> input = session.receive()
                         .map(WebSocketMessage::getPayload)
                         .map(dataBuffer -> {
-                            ByteBuffer buffer = dataBuffer.asByteBuffer();
-                            byte[] bytes = new byte[buffer.remaining()];
+                            var buffer = dataBuffer.toByteBuffer();
+                            var bytes = new byte[buffer.remaining()];
                             buffer.get(bytes);
                             return new String(bytes);
                         })
@@ -42,7 +41,7 @@ public class WSClientPerson {
                         .log()
                         .then();
 
-                return Mono.first(
+                return Mono.firstWithSignal(
                         output.then(Mono.delay(Duration.ofSeconds(1))),
                         input)
                     .then();

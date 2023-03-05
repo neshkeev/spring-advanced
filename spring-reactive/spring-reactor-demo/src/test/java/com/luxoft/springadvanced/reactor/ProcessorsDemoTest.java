@@ -7,6 +7,7 @@ import reactor.core.scheduler.Schedulers;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+@SuppressWarnings("deprecation")
 public class ProcessorsDemoTest {
 
     private static void sleep(long millis) {
@@ -58,7 +59,6 @@ public class ProcessorsDemoTest {
         // subscribers subscribe but replays
         // the termination signal to them immediately.
         DirectProcessor<Long> data = DirectProcessor.create();
-//        EmitterProcessor<Long> data = EmitterProcessor.create();
         data.subscribe(System.out::println,
                 Throwable::printStackTrace,
                 () -> System.out.println("Finished 1"));

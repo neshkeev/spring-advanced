@@ -27,6 +27,7 @@ public class PersonController {
         this.nameGenerator = nameGenerator;
     }
 
+    @SuppressWarnings("deprecation")
     @GetMapping(produces = MediaType.APPLICATION_STREAM_JSON_VALUE)
     public Flux<Person> list(@RequestParam(defaultValue = "0") Long start,
                              @RequestParam(defaultValue = "5") Long count) {
@@ -36,6 +37,7 @@ public class PersonController {
                 .take(count);
     }
 
+    @SuppressWarnings("deprecation")
     // find person for each name
     @GetMapping(path = "/all", produces = MediaType.APPLICATION_STREAM_JSON_VALUE)
     public Flux<List<String>> getAll() {

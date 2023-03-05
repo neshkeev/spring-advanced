@@ -13,10 +13,10 @@ public class NameGenerator {
     @Autowired
     private PersonRepository personRepository;
 
-    static String[] names = {
+    private static final String[] names = {
             "Vasya", "Dima", "Misha", "Sasha"
     };
-    static Random random = new Random();
+    private static final Random random = new Random();
 
     public Flux<String> names() {
         return Flux.generate(fluxSink -> {
