@@ -28,7 +28,7 @@ public class WebTestClientTest {
                 .exchange()
                 .expectStatus().isOk()
                 .expectBodyList(Integer.class)
-                .contains(1, 2, 3, 4);
+                .contains(0, 1, 2, 3, 4);
 
         verify(controller, times(1)).getNumbers();
     }

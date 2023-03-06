@@ -31,5 +31,4 @@ public class SpringAppJavaBeansTest {
         assertEquals(expectedPerson, person);
         System.out.println(person);
     }
-
 }

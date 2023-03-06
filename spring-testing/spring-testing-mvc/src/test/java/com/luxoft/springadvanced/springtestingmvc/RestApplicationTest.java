@@ -44,7 +44,6 @@ public class RestApplicationTest {
                 new Country("South Korea", "SK"),
                 new Country("Taiwan", "TW"),
                 new Country("Singapore", "SG")
-
         );
         when(countryRepository.findAll()).thenReturn(countries);
 
@@ -84,8 +83,8 @@ public class RestApplicationTest {
         when(passengerRepository.save(passenger)).thenReturn(passenger);
 
         mvc.perform(post("/passengers")
-                .content(new ObjectMapper().writeValueAsString(passenger))
-                .header(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON))
+                        .content(new ObjectMapper().writeValueAsString(passenger))
+                        .header(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON))
                 .andExpect(status().isCreated())
                 .andExpect(jsonPath("$.name", is(passenger.getName())))
                 .andExpect(jsonPath("$.country.codeName", is(country.getCodeName())))
