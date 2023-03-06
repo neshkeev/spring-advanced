@@ -1,0 +1,16 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.ehcache.org/v3"
+        xsi:schemaLocation="http://www.ehcache.org/v3 http://www.ehcache.org/schema/ehcache-core-3.0.xsd">
+
+    <cache-template name="default">
+        <expiry>
+            <ttl>30</ttl>
+        </expiry>
+        <!--suppress XmlDeprecatedElement -->
+        <heap unit="MB">1024</heap>
+    </cache-template>
+
+    <cache alias="employees" uses-template="default"/>
+    <cache alias="departments" uses-template="default"/>
+
+</config>

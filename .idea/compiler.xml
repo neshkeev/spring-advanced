@@ -12,6 +12,7 @@
         <module name="spring-data-rest" />
         <module name="spring-testing-mockito" />
         <module name="spring-data-rest-projections" />
+        <module name="spring-cache-simple" />
         <module name="spring-webflux-demo" />
         <module name="spring-testing-mvc" />
         <module name="spring-observability" />
@@ -22,6 +23,9 @@
         <module name="spring-serde" />
         <module name="spring-auth-service" />
         <module name="spring-testing-annotations" />
+        <module name="spring-hibernate-cache" />
+        <module name="spring-data-caching" />
+        <module name="spring-hazelcast-caching" />
         <module name="spring-webclient" />
         <module name="spring-distributed-transactions" />
         <module name="spring-reactor-demo" />
@@ -38,18 +42,20 @@
         <module name="mapstruct-mapping-loop" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="spring-testing-testcontainers" target="17" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="mapstruct-mapping-loop" options="-parameters" />
       <module name="spring-auth-service" options="-parameters" />
       <module name="spring-bean-validation" options="-parameters" />
+      <module name="spring-cache-simple" options="-parameters" />
+      <module name="spring-data-caching" options="-parameters" />
       <module name="spring-data-rest" options="-parameters" />
       <module name="spring-data-rest-projections" options="-parameters" />
       <module name="spring-distributed-transactions" options="-parameters" />
+      <module name="spring-hazelcast-caching" options="-parameters" />
+      <module name="spring-hibernate-cache" options="-parameters" />
+      <module name="spring-hibernate-cache-first-level" options="-parameters" />
       <module name="spring-jackson-demo" options="-parameters" />
       <module name="spring-mapstruct" options="-parameters" />
       <module name="spring-observability" options="-parameters" />
