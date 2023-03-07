@@ -1,0 +1,12 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="3. FirstLevelCacheTest" type="JUnit" factoryName="JUnit" folderName="7. Caching">
+    <module name="spring-hibernate-cache" />
+    <option name="PACKAGE_NAME" value="com.luxoft.springadvanced.springhibernatecache.firstlevel" />
+    <option name="MAIN_CLASS_NAME" value="com.luxoft.springadvanced.springhibernatecache.firstlevel.FirstLevelCacheTest" />
+    <option name="METHOD_NAME" value="" />
+    <option name="TEST_OBJECT" value="class" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

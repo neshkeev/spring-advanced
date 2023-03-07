@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="HazelcastBasedCachingApplication" type="Application" factoryName="Application" folderName="7. Caching" nameIsGenerated="true">
+    <option name="MAIN_CLASS_NAME" value="com.luxoft.springadvanced.springhazelcastcaching.HazelcastBasedCachingApplication" />
+    <module name="spring-hazelcast-caching" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
