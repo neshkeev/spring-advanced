@@ -5,6 +5,8 @@ hazelcast:
       endpoint-groups:
         DATA:
           enabled: true
+        CLUSTER_READ:
+          enabled: true
         CLUSTER_WRITE:
           enabled: true
         HEALTH_CHECK:

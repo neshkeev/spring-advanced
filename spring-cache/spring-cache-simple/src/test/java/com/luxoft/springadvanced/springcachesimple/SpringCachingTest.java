@@ -113,13 +113,13 @@ public class SpringCachingTest {
     @Test
     public void testAddressCachePutCondition() {
         final var john = new Client("John", INITIAL_ADDRESS);
+        final var mike = new Client("Mike", INITIAL_ADDRESS);
         withTimeLogger(() -> service.getAddressCachePutCondition(john));
         john.setAddress(NEW_ADDRESS);
         final var address = withTimeLogger(() -> service.getCacheableAddress(john));
 
         assertEquals(INITIAL_ADDRESS, address, "The address should be updated");
 
-        final var mike = new Client("Mike", INITIAL_ADDRESS);
         withTimeLogger(() -> service.getAddressCachePutCondition(mike));
 
         mike.setAddress(NEW_ADDRESS);
@@ -131,7 +131,8 @@ public class SpringCachingTest {
         final var start = LocalDateTime.now();
         try {
             return exe.get();
-        } finally {
+        }
+        finally {
             final var end = LocalDateTime.now();
             LOG.info("Execution took {}ns", Duration.between(start, end).toNanos());
         }
