@@ -1,5 +1,18 @@
 hazelcast:
   network:
+    rest-api:
+      enabled: true
+      endpoint-groups:
+        DATA:
+          enabled: true
+        CLUSTER_WRITE:
+          enabled: true
+        HEALTH_CHECK:
+          enabled: true
+        WAN:
+          enabled: true
+        CP:
+          enabled: true
     join:
       multicast:
         enabled: true
