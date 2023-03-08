@@ -23,7 +23,9 @@ import java.util.concurrent.CountDownLatch;
 @ExtendWith(SpringExtension.class)
 @DirtiesContext(classMode = DirtiesContext.ClassMode.BEFORE_EACH_TEST_METHOD)
 @Sql(value = "classpath:setup-schema.sql", executionPhase = Sql.ExecutionPhase.BEFORE_TEST_METHOD)
-@ContextConfiguration(classes = SecondLevelEhCacheTest.SecondLevelEhCache.class, initializers = SecondLevelEhCacheTest.SecondLevelEhCacheContextInitializer.class)
+@ContextConfiguration(
+        classes = SecondLevelEhCacheTest.SecondLevelEhCache.class,
+        initializers = SecondLevelEhCacheTest.SecondLevelEhCacheContextInitializer.class)
 public class SecondLevelEhCacheTest {
     @Autowired
     private DepartmentRepository departmentRepository;
@@ -33,9 +35,11 @@ public class SecondLevelEhCacheTest {
 
     @Test
     public void testEhCacheNoTransaction() {
+        System.out.println("before");
         departmentRepository.findById(1);
         System.out.println("Again");
         departmentRepository.findById(1);
+        System.out.println("after");
     }
 
     @Test

@@ -1,0 +1,12 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="2. CronSchedulerTest" type="JUnit" factoryName="JUnit" folderName="8. Proxy">
+    <module name="spring-proxy-demo" />
+    <option name="PACKAGE_NAME" value="com.luxoft.springadvanced.springproxyscheduler.cron" />
+    <option name="MAIN_CLASS_NAME" value="com.luxoft.springadvanced.springproxyscheduler.cron.CronSchedulerTest" />
+    <option name="METHOD_NAME" value="" />
+    <option name="TEST_OBJECT" value="class" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

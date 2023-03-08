@@ -1,0 +1,18 @@
+# Задание 1
+
+При помощи Spring Caching:
+
+1. Создать класс: Employee (id, name, dept)
+2. Создать класс: Department (id, name, executive(bool))
+3. Положить Department в кэш departments
+4. Положить Employee в кэш employees по ключу id
+5. Положить Employee в кэш executives, где executive == true
+
+# Задание 2
+
+При помощи EhCache API:
+
+1. Создать объект Passenger (id, name, business(bool))
+2. Создать объект Baggage (code, Passenger)
+3. Положить Passenger в кэш passengers, где business == true
+4. Положить Baggage в кэш baggages на 24 часа

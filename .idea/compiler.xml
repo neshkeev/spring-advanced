@@ -6,26 +6,30 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring-proxy-postprocessor" />
         <module name="spring-transactions-dao" />
         <module name="spring-rest-hateos" />
         <module name="spring-bean-validation" />
         <module name="spring-data-rest" />
-        <module name="spring-testing-mockito" />
         <module name="spring-data-rest-projections" />
-        <module name="spring-cache-simple" />
         <module name="spring-webflux-demo" />
         <module name="spring-testing-mvc" />
-        <module name="spring-observability" />
+        <module name="spring-proxy-simple" />
         <module name="spring-rest-hateaos" />
-        <module name="spring-jackson-demo" />
         <module name="spring-rest-events" />
         <module name="spring-testing-webflux" />
+        <module name="spring-hibernate-cache" />
+        <module name="spring-hazelcast-caching" />
+        <module name="spring-testing-mockito" />
+        <module name="spring-cache-simple" />
+        <module name="spring-observability" />
+        <module name="spring-jackson-demo" />
+        <module name="spring-proxy-demo" />
         <module name="spring-serde" />
         <module name="spring-auth-service" />
         <module name="spring-testing-annotations" />
-        <module name="spring-hibernate-cache" />
+        <module name="spring-proxy-aop" />
         <module name="spring-data-caching" />
-        <module name="spring-hazelcast-caching" />
         <module name="spring-webclient" />
         <module name="spring-distributed-transactions" />
         <module name="spring-reactor-demo" />
@@ -59,6 +63,10 @@
       <module name="spring-jackson-demo" options="-parameters" />
       <module name="spring-mapstruct" options="-parameters" />
       <module name="spring-observability" options="-parameters" />
+      <module name="spring-proxy-aop" options="-parameters" />
+      <module name="spring-proxy-demo" options="-parameters" />
+      <module name="spring-proxy-postprocessor" options="-parameters" />
+      <module name="spring-proxy-simple" options="-parameters" />
       <module name="spring-reactor-demo" options="-parameters" />
       <module name="spring-rest-events" options="-parameters" />
       <module name="spring-rest-hateaos" options="-parameters" />

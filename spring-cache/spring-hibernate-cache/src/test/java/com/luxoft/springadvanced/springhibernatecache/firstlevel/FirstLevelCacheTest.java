@@ -25,19 +25,23 @@ public class FirstLevelCacheTest {
 
     @Test
     public void testNoTransactionalNoCache() {
+        System.out.println("before");
         employeeRepository.findById(1);
         employeeRepository.findById(1);
         employeeRepository.findById(1);
         employeeRepository.findById(1);
+        System.out.println("after");
     }
 
     @Test
     @Transactional
     public void testCacheInTransaction() {
+        System.out.println("before");
         departmentRepository.findById(1);
         departmentRepository.findById(1);
         departmentRepository.findById(1);
         departmentRepository.findById(1);
+        System.out.println("after");
     }
 
     @SpringBootApplication

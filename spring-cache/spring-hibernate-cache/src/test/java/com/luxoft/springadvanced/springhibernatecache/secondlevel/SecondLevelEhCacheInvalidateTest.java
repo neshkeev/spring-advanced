@@ -30,6 +30,9 @@ public class SecondLevelEhCacheInvalidateTest {
     @Autowired
     private EmployeeRepository employeeRepository;
 
+    @PersistenceContext
+    private EntityManager em;
+
     @Test
     public void testAddNewEntry() {
         System.out.println("Before");
@@ -58,9 +61,6 @@ public class SecondLevelEhCacheInvalidateTest {
         System.out.println("Second select");
         employeeRepository.findById(1).ifPresent(System.out::println);
     }
-
-    @PersistenceContext
-    private EntityManager em;
 
     @Test
     @Transactional
