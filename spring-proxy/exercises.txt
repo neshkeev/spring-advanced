@@ -18,3 +18,27 @@
 4. Игнорировать параметры метода
 5. (*) Учитывать параметры метода (замыкания и lambda)
 6. (*) Интегрироваться с имеющимся бином org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler
+
+@Service
+class MyService {
+
+    @Delay(value = 2, units = TimeUnit.SECONDS)
+    void action() throws Exception {
+        var user = repository.findById(1).get();
+        user.setName(....);
+        repository.save(user);
+    }
+}
+
+@Service
+class MyService2 {
+
+    @Autowired
+    MyService myService;
+
+    void f() throws Exception {
+        // реальное выполнение MyService#action откладывается на время указанное в @Delay,
+        // при этом не блокируется текущий тред, а выполнение основного потока продолжается
+        myService.action();
+    }
+}
