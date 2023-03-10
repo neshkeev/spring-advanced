@@ -23,14 +23,17 @@ public class JmxWrapperInvocationHandler implements InvocationHandler {
                 return null;
             case "getMBeanInfo":
                 final MBeanOperationInfo[] operations;
-
-                    operations = Arrays.stream(bean.getClass().getDeclaredMethods())
-                            .filter(m -> Modifier.isPublic(m.getModifiers()))
-                            .map(m -> new MBeanOperationInfo(m.getName(), m))
-                            .toArray(MBeanOperationInfo[]::new);
+                operations = Arrays.stream(bean.getClass().getDeclaredMethods())
+                        .filter(m -> Modifier.isPublic(m.getModifiers()))
+                        .map(m -> new MBeanOperationInfo(m.getName(), m))
+                        .toArray(MBeanOperationInfo[]::new);
                 final var constructors = new MBeanConstructorInfo[0];
-                return new MBeanInfo(
-                        this.getClass().getName(), "", new MBeanAttributeInfo[0], constructors, operations, new MBeanNotificationInfo[0]
+                return new MBeanInfo(this.getClass().getName(),
+                        "",
+                        new MBeanAttributeInfo[0],
+                        constructors,
+                        operations,
+                        new MBeanNotificationInfo[0]
                 );
             case "invoke":
                 return invoke(args);

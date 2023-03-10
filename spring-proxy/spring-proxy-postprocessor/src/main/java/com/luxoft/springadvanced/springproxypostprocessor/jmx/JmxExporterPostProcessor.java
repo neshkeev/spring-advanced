@@ -26,7 +26,7 @@ public class JmxExporterPostProcessor implements BeanPostProcessor {
         if (annotation == null) return;
 
         try {
-            var name = StringUtils.hasText(annotation.name())
+            final var name = StringUtils.hasText(annotation.name())
                     ? annotation.name()
                     : beanName;
 

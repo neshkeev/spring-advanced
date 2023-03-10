@@ -26,7 +26,8 @@ public class MapLoggerWrapper<T, U> implements InvocationHandler {
         final var start = LocalDateTime.now();
         try {
             return method.invoke(container, args);
-        } finally {
+        }
+        finally {
             final var end = LocalDateTime.now();
             LOG.info("End executing {} which took {}ns", method.getName(), Duration.between(start, end).toNanos());
         }

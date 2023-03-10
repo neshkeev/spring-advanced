@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="1. Spring Boot Admin" type="CompoundRunConfigurationType" folderName="9. Actuator">
+    <toRun name="12. AdminServerApplication" type="Application" />
+    <toRun name="13. AdminClientApplication" type="Application" />
+    <method v="2" />
+  </configuration>
+</component>

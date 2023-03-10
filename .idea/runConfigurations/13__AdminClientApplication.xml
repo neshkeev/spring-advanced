@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="13. AdminClientApplication" type="Application" factoryName="Application" folderName="9. Actuator">
+    <option name="MAIN_CLASS_NAME" value="com.luxoft.springadvanced.springadminclient.AdminClientApplication" />
+    <module name="spring-actuator-admin-client" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

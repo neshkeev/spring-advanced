@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="2. Grafana Prometheus" type="CompoundRunConfigurationType" folderName="9. Actuator">
+    <toRun name="spring-advanced [package,-DskipTests]" type="MavenRunConfiguration" />
+    <toRun name="Docker compose build" type="ShConfigurationType" />
+    <toRun name="Docker compose up" type="ShConfigurationType" />
+    <method v="2" />
+  </configuration>
+</component>

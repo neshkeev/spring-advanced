@@ -10,25 +10,23 @@
 
     <packaging>pom</packaging>
 
-    <artifactId>spring-cache</artifactId>
-    <name>spring-cache</name>
+    <artifactId>spring-actuator</artifactId>
+    <name>spring-actuator</name>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
         </dependency>
     </dependencies>
 
     <modules>
-        <module>spring-cache-simple</module>
-        <module>spring-hibernate-cache</module>
-        <module>spring-data-caching</module>
-        <module>spring-hazelcast-caching</module>
+        <module>spring-actuator-simple</module>
+        <module>spring-actuator-admin-server</module>
+        <module>spring-actuator-admin-client</module>
     </modules>
 </project>

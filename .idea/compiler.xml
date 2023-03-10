@@ -13,6 +13,7 @@
         <module name="spring-data-rest" />
         <module name="spring-data-rest-projections" />
         <module name="spring-webflux-demo" />
+        <module name="spring-actuator-admin-server" />
         <module name="spring-testing-mvc" />
         <module name="spring-proxy-simple" />
         <module name="spring-rest-hateaos" />
@@ -20,11 +21,13 @@
         <module name="spring-testing-webflux" />
         <module name="spring-hibernate-cache" />
         <module name="spring-hazelcast-caching" />
+        <module name="spring-actuator-simple" />
         <module name="spring-testing-mockito" />
         <module name="spring-cache-simple" />
         <module name="spring-observability" />
         <module name="spring-jackson-demo" />
         <module name="spring-proxy-demo" />
+        <module name="spring-actuator-admin-client" />
         <module name="spring-serde" />
         <module name="spring-auth-service" />
         <module name="spring-testing-annotations" />
@@ -50,6 +53,9 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="mapstruct-mapping-loop" options="-parameters" />
+      <module name="spring-actuator-admin-client" options="-parameters" />
+      <module name="spring-actuator-admin-server" options="-parameters" />
+      <module name="spring-actuator-simple" options="-parameters" />
       <module name="spring-auth-service" options="-parameters" />
       <module name="spring-bean-validation" options="-parameters" />
       <module name="spring-cache-simple" options="-parameters" />

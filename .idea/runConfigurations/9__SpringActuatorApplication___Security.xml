@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="9. SpringActuatorApplication - Security" type="Application" factoryName="Application" folderName="9. Actuator">
+    <option name="MAIN_CLASS_NAME" value="com.luxoft.springadvanced.springactuatorsimple.SpringActuatorApplication" />
+    <module name="spring-actuator-simple" />
+    <option name="VM_PARAMETERS" value="-Dspring.profiles.active=activate-all" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
