@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="1. docker compose" type="CompoundRunConfigurationType" folderName="10. Deploy">
+    <toRun name="1. Build docker compose" type="ShConfigurationType" />
+    <toRun name="2. Start docker compose" type="ShConfigurationType" />
+    <method v="2" />
+  </configuration>
+</component>

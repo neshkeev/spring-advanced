@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Docker compose up" type="ShConfigurationType">
+  <configuration default="false" name="Docker compose up" type="ShConfigurationType" folderName="9. Actuator">
     <option name="SCRIPT_TEXT" value="docker compose up" />
     <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
     <option name="SCRIPT_PATH" value="" />

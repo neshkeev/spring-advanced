@@ -32,6 +32,7 @@
         <module>spring-cache</module>
         <module>spring-proxy</module>
         <module>spring-actuator</module>
+        <module>spring-deploy</module>
     </modules>
 
 </project>

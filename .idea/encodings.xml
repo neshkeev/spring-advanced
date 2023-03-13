@@ -17,6 +17,11 @@
     <file url="file://$PROJECT_DIR$/spring-cache/spring-hibernate-cache/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cache/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cache/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-deploy/spring-deploy-devtools/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-deploy/spring-deploy-packaging/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-deploy/spring-deploy-packaging/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-deploy/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-deploy/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-object-mapping/mapstruct-mapping-loop/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-object-mapping/spring-bean-validation/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-object-mapping/spring-data-rest-projections/src/main/java" charset="UTF-8" />

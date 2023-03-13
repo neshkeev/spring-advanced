@@ -6,14 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-proxy-postprocessor" />
         <module name="spring-transactions-dao" />
+        <module name="spring-proxy-postprocessor" />
         <module name="spring-rest-hateos" />
         <module name="spring-bean-validation" />
         <module name="spring-data-rest" />
         <module name="spring-data-rest-projections" />
-        <module name="spring-webflux-demo" />
+        <module name="spring-deploy-packaging" />
         <module name="spring-actuator-admin-server" />
+        <module name="spring-webflux-demo" />
         <module name="spring-testing-mvc" />
         <module name="spring-proxy-simple" />
         <module name="spring-rest-hateaos" />
@@ -26,12 +27,13 @@
         <module name="spring-cache-simple" />
         <module name="spring-observability" />
         <module name="spring-jackson-demo" />
+        <module name="spring-deploy-devtools" />
         <module name="spring-proxy-demo" />
         <module name="spring-actuator-admin-client" />
-        <module name="spring-serde" />
         <module name="spring-auth-service" />
-        <module name="spring-testing-annotations" />
+        <module name="spring-serde" />
         <module name="spring-proxy-aop" />
+        <module name="spring-testing-annotations" />
         <module name="spring-data-caching" />
         <module name="spring-webclient" />
         <module name="spring-distributed-transactions" />
@@ -62,6 +64,8 @@
       <module name="spring-data-caching" options="-parameters" />
       <module name="spring-data-rest" options="-parameters" />
       <module name="spring-data-rest-projections" options="-parameters" />
+      <module name="spring-deploy-devtools" options="-parameters" />
+      <module name="spring-deploy-packaging" options="" />
       <module name="spring-distributed-transactions" options="-parameters" />
       <module name="spring-hazelcast-caching" options="-parameters" />
       <module name="spring-hibernate-cache" options="-parameters" />
