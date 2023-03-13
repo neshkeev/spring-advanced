@@ -75,6 +75,15 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <!-- No need to add this goal when `spring-boot-starter-parent` is a parent of this maven module -->
+                            <!-- This module declares spring-boot-starter-parent as a dependency, so I need to declare it here -->
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
